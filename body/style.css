@@ -1,0 +1,143 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+a {
+  text-decoration: none;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(90deg, #333, #222);
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+nav {
+  margin-top: 0.5rem;
+}
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 2px;
+}
+nav a:hover {
+  color: #ff9800;
+  border-bottom: 2px solid #ff9800;
+}
+
+/* ===== Main ===== */
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Profile Image */
+.profile-img {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.profile-img img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ff9800;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.profile-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Skills Section */
+section h3 {
+  color: #ff9800;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+ul li {
+  background: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background 0.2s ease;
+  font-weight: 500;
+}
+ul li:hover {
+  transform: translateY(-3px);
+  background: #ff9800;
+  color: #fff;
+}
+
+/* Articles */
+article {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+article:hover {
+  transform: translateY(-3px);
+}
+
+/* Aside */
+aside {
+  background: #e0f7fa;
+  padding: 1rem;
+  border-left: 5px solid #00acc1;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+}
+footer a {
+  color: #ff9800;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #fff;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  nav a {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
